@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .header {
+            grid-area: header;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .right {
+            grid-area: right;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .page {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu menu main main main .'
+                'footer footer footer footer footer .';
+            background-color: rgb(117, 117, 117);
+            gap: 2px;
+            padding: 10px;
+            height: 95vh;
+        }
+
+        .page div {
+
+            display: inline;
+            background-color: white;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .logo img {
+            width: 300px;
+
+        }
+
+        .avatar img {
+            width: 300px;
+            position: absolute;
+            right: 20px;
+        }
+
+        .grid-container {
+            display: grid !important;
+            grid-template-columns: repeat(4, auto);
+            gap: 10px;
+            background-color: blue;
+            padding: 15px;
+        }
+
+        .item1 {
+            grid-column: 1 / span 3;
+        }
+
+        .item10 {
+            grid-column: 4;
+            grid-row: 3 / span 5;
+        }
+
+        .item14 {
+            grid-column: 1 / span 2;
+        }
+
+        .g img {
+            width: 250px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+        }
+    </style>
+    <div class="page">
+        <div class="header">
+
+            <div class="logo">
+                <img src="https://us.123rf.com/450wm/krisdog/krisdog1803/krisdog180300001/96561317-mascota-del-f%C3%BAtbol-del-f%C3%BAtbol-del-diablo.jpg"
+                    alt="">
+            </div>
+            <div class="avatar">
+                <img src="https://www.pinpng.com/pngs/m/465-4651170_usuario-17-oct-2013-user-icon-png-transparent.png"
+                    alt="">
+            </div>
+        </div>
+        <div class="menu">
+            <h3> Menu </h3>
+            <ul>
+                <li> Nomina</li>
+                <li> Felicitaciones</li>
+                <li> Reservas</li>
+                <li> Noticias</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="grid-container">
+                <div class="grid-item item1">1</div>
+                <div class="grid-item item2">2</div>
+                <div class="grid-item item3">3</div>
+                <div class="grid-item item4">4</div>
+                <div class="grid-item item5">5</div>
+                <div class="grid-item item6">6</div>
+                <div class="grid-item item7">7</div>
+                <div class="grid-item item8">8</div>
+                <div class="grid-item item9">9</div>
+                <div class="grid-item item10">10</div>
+                <div class="grid-item item11">11</div>
+                <div class="grid-item item12">12</div>
+                <div class="grid-item item13">13</div>
+                <div class="grid-item item14">14</div>
+                <div class="grid-item item15">15</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="gallery">
+                <div class="g1 g">
+                    <img
+                        src="https://play-lh.googleusercontent.com/Sy_9xv0fpbnc6bJgYM_DGj7-BhleftZgjbeFmvcN5eMGnoizMl2igd5IfJEq82xKZw8">
+                </div>
+                <div class="g2 g">
+                    <img
+                        src="https://play-lh.googleusercontent.com/Sy_9xv0fpbnc6bJgYM_DGj7-BhleftZgjbeFmvcN5eMGnoizMl2igd5IfJEq82xKZw8">
+
+                </div>
+                <div class="g3 g">
+                    <img
+                        src="https://play-lh.googleusercontent.com/Sy_9xv0fpbnc6bJgYM_DGj7-BhleftZgjbeFmvcN5eMGnoizMl2igd5IfJEq82xKZw8">
+
+                </div>
+                <div class="g4 g">
+                    <img
+                        src="https://play-lh.googleusercontent.com/Sy_9xv0fpbnc6bJgYM_DGj7-BhleftZgjbeFmvcN5eMGnoizMl2igd5IfJEq82xKZw8">
+
+                </div>
+                <div class="g5 g">
+                    <img
+                        src="https://play-lh.googleusercontent.com/Sy_9xv0fpbnc6bJgYM_DGj7-BhleftZgjbeFmvcN5eMGnoizMl2igd5IfJEq82xKZw8">
+
+                </div>
+                <div class="g6 g">
+                    <img
+                        src="https://play-lh.googleusercontent.com/Sy_9xv0fpbnc6bJgYM_DGj7-BhleftZgjbeFmvcN5eMGnoizMl2igd5IfJEq82xKZw8">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
